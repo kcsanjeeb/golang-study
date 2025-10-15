@@ -12,3 +12,9 @@ A personal study repository dedicated to learning and mastering the Go programmi
     * [Lesson 2](./lesson-2/)
 3. **Variables**
     * [Lesson 3](./lesson-3/)
+4. **Constants**
+    * [Lesson 4](./lesson-4/)
+5. **Identifiers**
+    * [Lesson 5](./lesson=5/)
+6. ****
+    * [Lesson 6](./lesson-6/)
