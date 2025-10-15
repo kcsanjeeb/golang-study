@@ -1,11 +1,11 @@
 ---
-title: Functions in Go
+title: Functions 
 description: Modular reusable code blocks for organizing programs
 date: 2024-01-31
 tags: ['go', 'functions', 'modular', 'reusable']
 ---
 
-# Functions in Go
+# Functions
 
 ## What are Functions?
 

@@ -24,4 +24,15 @@ A personal study repository dedicated to learning and mastering the Go programmi
     * [Lesson 8](./lesson-8/)
 9. **Maps**
     * [Lesson 9](./lesson-9/)
-
+10. **Structs**
+    * [Lesson 10](./lesson-10/)
+11. **Conditional Statements**
+    * [Lesson 11](./lesson-11/)
+12. **Code Blocks and Shadowing**
+    * [Lesson 12](./lesson-12/)
+13. **Loops**
+    * [Lesson 13](./lesson-13/)
+14. **Control Flow**
+    * [Lesson 14](./lesson-14/)
+15. **Functions**
+    * [Lesson 15](./lesson-15/)

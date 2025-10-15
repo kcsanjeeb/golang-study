@@ -1,11 +1,11 @@
 ---
-title: Structs in Go
+title: Structs 
 description: Custom data types and struct operations in Go
 date: 2024-01-26
 tags: ['go', 'structs', 'custom-types', 'data-structures']
 ---
 
-# Structs in Go
+# Structs 
 
 ## What are Structs?
 

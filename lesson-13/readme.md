@@ -1,11 +1,11 @@
 ---
-title: Loops in Go
+title: Loops
 description: Different types of for loops and their usage in Go
 date: 2024-01-29
 tags: ['go', 'loops', 'for', 'range', 'iteration']
 ---
 
-# Loops in Go
+# Loops 
 
 ## Types of For Loops
 
