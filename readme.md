@@ -15,6 +15,6 @@ A personal study repository dedicated to learning and mastering the Go programmi
 4. **Constants**
     * [Lesson 4](./lesson-4/)
 5. **Identifiers**
-    * [Lesson 5](./lesson=5/)
-6. ****
+    * [Lesson 5](./lesson-5/)
+6. **Operators**
     * [Lesson 6](./lesson-6/)
