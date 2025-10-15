@@ -1,11 +1,11 @@
 ---
-title: Maps in Go
+title: Maps
 description: Key-value data structures and their operations in Go
 date: 2024-01-25
 tags: ['go', 'maps', 'key-value', 'data-structures']
 ---
 
-# Maps in Go
+# Maps
 
 ## What are Maps?
 
