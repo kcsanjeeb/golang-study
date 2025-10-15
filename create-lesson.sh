@@ -26,8 +26,6 @@ touch "$new_dir/readme.md"
 cat > "$new_dir/main.go" << EOF
 package main
 
-import "fmt"
-
 func main() {
 
 }
