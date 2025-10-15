@@ -3,11 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	// STRING
-	var myString string
-	fmt.Println(myString) // prints nothing
-	myString = "Welcome to coding."
-	fmt.Println(myString) // prints the string
 
 	// INTEGER
 	var myInt int
@@ -59,5 +54,29 @@ func main() {
 	fmt.Println(myImaginaryPart)
 
 	// STRING
+	var myString string
+	fmt.Println(myString)
+	myString = "Hello !! "
+	fmt.Println(myString)
+	myString = `Hello this is me
+How are you ? `
+	fmt.Println(myString)
+
+	//CONCATENATE STRING
+	var fullname, firstname, lastname string
+	var avatar rune
+	firstname = "John"
+	lastname = "Doe"
+	avatar = '😆'
+	fullname = firstname + " " + lastname + " "
+	fmt.Println(fullname)
+	fmt.Println(avatar)
+
+	// FORMATTED STRINGS
+	fmt.Printf("%s %s\n", firstname, lastname)
+	fmt.Printf("%s %s\n", firstname, lastname)
+
+	fullname = fmt.Sprintf("%s %s", lastname, firstname)
+	fmt.Println(fullname)
 
 }

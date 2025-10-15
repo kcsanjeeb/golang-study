@@ -1,11 +1,11 @@
 ---
-title: Getting Started with Go
+title: Getting Started 
 description: Installing Go and writing your first "Hello World" program
 date: 2024-01-15
 tags: ['go', 'beginners', 'installation', 'hello-world']
 ---
 
-# Getting Started with Go
+# Getting Started 
 
 ## Installing Go
 
