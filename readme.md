@@ -18,3 +18,10 @@ A personal study repository dedicated to learning and mastering the Go programmi
     * [Lesson 5](./lesson-5/)
 6. **Operators**
     * [Lesson 6](./lesson-6/)
+7. **Arrays**
+    * [Lesson 7](./lesson-7/)
+8. **Slices**
+    * [Lesson 8](./lesson-8/)
+9. **Maps**
+    * [Lesson 9](./lesson-9/)
+
