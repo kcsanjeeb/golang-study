@@ -26,7 +26,7 @@ go version
 ```
 You should see output like: go version go1.21.0
 
-5. Setting up Your Workspace
+5. **Setting up Your Workspace**
 Go uses a specific directory structure for your projects:
 ```bash
 # Create your Go workspace
@@ -51,7 +51,7 @@ func main() {
 }
 ```
 
-7. Understanding the Code
+7. **Understanding the Code**
     1. Package Declaration `package main`
         * Every Go file starts with a package declaration
         * main package creates an executable program
@@ -70,7 +70,7 @@ func main() {
         * Println function prints text with a newline
         * String is enclosed in double quotes " "
 
-8. Creating and Running the Program
+8. **Creating and Running the Program**
     * Run the program: `go run main.go`
     * Build and Run: `go build -o hello-world main.go`, `./hello-world`
 
