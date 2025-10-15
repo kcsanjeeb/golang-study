@@ -57,6 +57,8 @@ multi-line string`
 ```
 
 #### Byte and Rune Types
+* **byte**: alias of `uint8`
+* **rune**: alias of `int32`
 ```go
 var ch byte = 'A'           // alias for uint8, represents ASCII characters
 var unicodeChar rune = '世' // alias for int32, represents Unicode code points
