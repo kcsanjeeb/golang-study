@@ -54,14 +54,10 @@ cd go-study/lesson-1
 
 # Run examples
 go run main.go
-
-
 ```
 
 ## 📖 Resources
-[Go Official Documentation](https://go.dev/doc/)
-
-Go by Example
-
-Effective Go
+1. [Go Official Documentation](https://go.dev/doc/)
+2. [Go by Example](https://gobyexample.com/)
+3. [Effective Go](https://go.dev/doc/effective_go)
 
