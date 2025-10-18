@@ -20,7 +20,7 @@ Interfaces are **abstract types** that define method signatures without implemen
 Go uses **implicit interface implementation** - a type automatically satisfies an interface if it implements all its methods.
 
 ### Basic Interface Example
-~~~go
+```go
 type Writer interface {
     Write([]byte) (int, error)
 }
@@ -32,7 +32,7 @@ func (f FileWriter) Write(data []byte) (int, error) {
     return len(data), nil
 }
 // FileWriter implicitly satisfies Writer interface
-~~~
+```
 
 ## Benefits of Interfaces
 
@@ -46,7 +46,7 @@ func (f FileWriter) Write(data []byte) (int, error) {
 The empty interface `interface{}` (or `any`) represents any type:
 
 ### Using Empty Interface
-~~~go
+```go
 func printValue(value any) {
     fmt.Println(value)
 }
@@ -57,14 +57,14 @@ func main() {
         printValue(value)
     }
 }
-~~~
+```
 
 ## Type Assertion
 
 Type assertion extracts the concrete value from an empty interface:
 
 ### Safe Type Assertion
-~~~go
+```go
 var emptyInterface any = "Hello World"
 
 if str, ok := emptyInterface.(string); ok {
@@ -72,19 +72,19 @@ if str, ok := emptyInterface.(string); ok {
 } else {
     fmt.Println("Not a string")
 }
-~~~
+```
 
 ### Unsafe Type Assertion (May Panic)
-~~~go
+```go
 str := emptyInterface.(string) // Panics if not string
-~~~
+```
 
 ## Type Switch
 
 Type switch checks against multiple types in a clean syntax:
 
 ### Type Switch Example
-~~~go
+```go
 func describe(value any) {
     switch v := value.(type) {
     case string:
@@ -97,12 +97,12 @@ func describe(value any) {
         fmt.Printf("Unknown type: %T\n", v)
     }
 }
-~~~
+```
 
 ## Practical Examples
 
 ### Database Interface Example
-~~~go
+```go
 type Database interface {
     Connect() error
     Query(string) ([]string, error)
@@ -125,10 +125,10 @@ func useDatabase(db Database) {
     fmt.Println(results)
     db.Close()
 }
-~~~
+```
 
 ### Complete Type Handling Example
-~~~go
+```go
 package main
 
 import "fmt"
@@ -156,7 +156,7 @@ func main() {
     processValue(map[string]int{"a": 1, "b": 2})
     processValue(3.14)
 }
-~~~
+```
 
 ## Key Points
 

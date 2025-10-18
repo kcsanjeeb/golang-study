@@ -20,16 +20,16 @@ Go handles errors explicitly without `try-catch` blocks. The convention is to re
 
 The `error` type is a built-in interface with a single method:
 
-~~~go
+```go
 type error interface {
     Error() string
 }
-~~~
+```
 
 ## Creating Errors
 
 ### 1. Using `errors.New()` - Simple Errors
-~~~go
+```go
 import "errors"
 
 func Divide(a, b float64) (float64, error) {
@@ -38,10 +38,10 @@ func Divide(a, b float64) (float64, error) {
     }
     return a / b, nil
 }
-~~~
+```
 
 ### 2. Using `fmt.Errorf()` - Formatted Errors
-~~~go
+```go
 import "fmt"
 
 func Divide(a, b float64) (float64, error) {
@@ -50,10 +50,10 @@ func Divide(a, b float64) (float64, error) {
     }
     return a / b, nil
 }
-~~~
+```
 
 ### 3. Custom Error Types - Structured Errors
-~~~go
+```go
 type CustomError struct {
     Code    int
     Message string
@@ -69,22 +69,22 @@ func Divide(a, b float64) (float64, error) {
     }
     return a / b, nil
 }
-~~~
+```
 
 ## Error Handling Pattern
 
 ### Standard Error Checking
-~~~go
+```go
 result, err := Divide(10, 0)
 if err != nil {
     fmt.Println("error:", err)
     return // or handle appropriately
 }
 fmt.Println("result:", result)
-~~~
+```
 
 ### Multiple Error Checks
-~~~go
+```go
 func processFile(filename string) error {
     file, err := os.Open(filename)
     if err != nil {
@@ -100,7 +100,7 @@ func processFile(filename string) error {
     // Process data...
     return nil
 }
-~~~
+```
 
 ---
 
@@ -120,7 +120,7 @@ Sentinel errors are **predefined, exported error variables** that indicate speci
 - **Constant comparison**: Check with `==` operator
 
 ### Example from Standard Library
-~~~go
+```go
 // database/sql package
 var ErrNoRows = errors.New("sql: no rows in result set")
 
@@ -128,10 +128,10 @@ var ErrNoRows = errors.New("sql: no rows in result set")
 if err == sql.ErrNoRows {
     // Handle no rows case
 }
-~~~
+```
 
 ### Creating Sentinel Errors
-~~~go
+```go
 package mypkg
 
 import "errors"
@@ -141,7 +141,7 @@ var (
     ErrNotFound     = errors.New("mypkg: resource not found")
     ErrTimeout      = errors.New("mypkg: operation timed out")
 )
-~~~
+```
 
 
 ## Error Wrapping
@@ -156,7 +156,7 @@ var (
 Error wrapping adds **contextual information** to errors while preserving the original error.
 
 ### Wrapping with `fmt.Errorf(%w)`
-~~~go
+```go
 func firstFunction() error {
     return fmt.Errorf("original error: something went wrong in first function")
 }
@@ -174,10 +174,10 @@ func main() {
     fmt.Println(err)
     // Output: failed in second function: original error: something went wrong in first function
 }
-~~~
+```
 
 ### Wrapping Multiple Errors with `errors.Join()`
-~~~go
+```go
 func processData() error {
     var errs []error
     
@@ -200,7 +200,7 @@ func secondFunction() error {
     }
     return nil
 }
-~~~
+```
 
 
 ## errors.Join()
@@ -223,7 +223,7 @@ The `errors` package provides functions to inspect error chains.
 * a nil error returned from e.Unwrap() indicates that e does not wrap any error. 
 
 ### Basic Unwrapping
-~~~go
+```go
 import "errors"
 
 func main() {
@@ -244,10 +244,10 @@ func main() {
         fmt.Println("Found CustomError:", customErr)
     }
 }
-~~~
+```
 
 ### Custom Error with Unwrap
-~~~go
+```go
 type CustomError struct {
     Message string
     Wrapped error
@@ -267,7 +267,7 @@ func SomeFunction() error {
         Wrapped: errors.New("wrapped error"),
     }
 }
-~~~
+```
 
 ## Key Functions for Error Inspection
 
