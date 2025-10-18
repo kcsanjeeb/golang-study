@@ -1,4 +1,10 @@
-# Types and Methods
+---
+title: Types and Methods
+description: 
+date: 2024-02-05
+tags: ['go', 'types', 'methods]
+---
+
 
 # #Types 
 * a user defined types can be created with the type keyword 

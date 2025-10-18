@@ -21,6 +21,25 @@ A personal study repository dedicated to learning and mastering the Go programmi
 | **13. Loops** | For Loops, Range, Break, Continue | [Lesson 13](./lesson-13/) |
 | **14. Advanced Control** | Labels, Goto, Loop Control, Flow Management | [Lesson 14](./lesson-14/) |
 | **15. Functions** | Parameters, Return Values, Multiple Returns | [Lesson 15](./lesson-15/) |
+| **16. Variadic Parameters** | Functions with Variable Arguments, Flexible Parameters | [Lesson 16](./lesson-16/) |
+| **17. First-Class Functions** | Functions as Values, Higher-Order Functions | [Lesson 17](./lesson-17/) |
+| **18. Closures and Anonymous Functions** | Stateful Functions, Inline Function Definitions | [Lesson 18](./lesson-18/) |
+| **19. Defer Statement** | Deferred Execution, Cleanup Patterns, LIFO Behavior | [Lesson 19](./lesson-19/) |
+| **20. Pointers and Memory** | Memory Management, Mutability, Reference Semantics | [Lesson 20](./lesson-20/) |
+| **21. Types and Methods** | Method Receivers, Value vs Pointer Receivers | [Lesson 21](./lesson-21/) |
+| **22. Derived Types and Iota** | Type Derivation, Constant Generators, Enumerations | [Lesson 22](./lesson-22/) |
+| **23. Embedding and Composition** | Type Embedding, Method Promotion, Code Reuse | [Lesson 23](./lesson-23/) |
+| **24. Interfaces** | Abstract Types, Implicit Implementation, Polymorphism | [Lesson 24](./lesson-24/) |
+| **25. Error Handling** | Error Interface, Custom Errors, Error Patterns | [Lesson 25](./lesson-25/) |
+| **26. Panic and Recovery** | Exception Handling, Graceful Shutdown, Defer with Panic | [Lesson 26](./lesson-26/) |
+| **27. Packages and Imports** | Code Organization, Export Control, Import Paths | [Lesson 27](./lesson-27/) |
+| **28. The init Function** | Package Initialization, Automatic Execution | [Lesson 28](./lesson-28/) |
+| **29. Dependency Management** | Go Modules, Version Control, go.mod and go.sum | [Lesson 29](./lesson-29/) |
+| **30. I/O Interfaces** | io.Reader, io.Writer, Stream Processing | [Lesson 30](./lesson-30/) |
+| **31. JSON Handling** | Marshalling, Unmarshalling, Struct Tags | [Lesson 31](./lesson-31/) |
+| **32. Time Operations** | Time Manipulation, Durations, Execution Timing | [Lesson 32](./lesson-32/) |
+| **33. HTTP Client** | Making Requests, API Integration, Response Handling | [Lesson 33](./lesson-33/) |
+| **34. Contexts** | Request Scoping, Cancellation, Timeouts | [Lesson 34](./lesson-34/) |
 
 ## 🎯 Learning Path
 
