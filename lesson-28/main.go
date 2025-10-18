@@ -1,14 +1,11 @@
-package math
+package main
 
-// PI Exported (Uppercase letter)
-const PI = 3.14159
+import (
+	"example-1/math"
+	"fmt"
+)
 
-// Add Exported (Uppercase letter)
-func Add(x, y int) int {
-	return x + y
-}
-
-// substract not Exported (Lowercase letter)
-func substract(x, y int) int {
-	return x - y
+func main() {
+	sum := math.Add(3, 4)
+	fmt.Println(sum) // Output: 7
 }

@@ -35,3 +35,40 @@ func substract(x, y int) int {
 * To import package you need the package path which is the module name plus the relative directory path of the package.
 * The Go compiler does not allow packages to be imported but not use them.
 * Each code file needs to have its own imports.
+
+```go
+package main
+
+import (
+	"example-1/math"
+	"fmt"
+)
+
+func main() {
+	sum := math.Add(3, 4)
+	fmt.Println(sum) // Output: 7
+}
+
+```
+```go
+module example-1
+
+go 1.25.1
+```
+```go
+package math
+
+func Add(x, y int) int {
+	return x + y
+}
+```
+```go
+├── go.mod
+├── main.go
+├── math
+    └── math.go
+```
+
+# Package Naming
+* Idiomatically a package directory should have the same name as the package.
+* Their are exceptions to this rule, example when you have different version of the same package. 
